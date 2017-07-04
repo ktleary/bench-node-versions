@@ -1,5 +1,5 @@
 # bench-node-versions
-different versions of node running loops
+different versions of node iterating over arrays
 
     node-bench$ node arrays.js 
     arr1 x 2,533,180 ops/sec ±2.18% (77 runs sampled)
