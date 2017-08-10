@@ -33,3 +33,14 @@ different versions of node iterating over arrays
     Fastest is loop4,loop6
     node-bench$ node -v
     v8.0.0
+    
+    node-bench$ node arrays.js 
+    arr1 x 19,505,575 ops/sec ±0.96% (88 runs sampled)
+    arr2 x 3,295,502 ops/sec ±0.86% (91 runs sampled)
+    loop3 x 1,563,519 ops/sec ±0.71% (91 runs sampled)
+    loop4 x 19,394,838 ops/sec ±1.02% (85 runs sampled)
+    loop5 x 13,488,836 ops/sec ±0.68% (84 runs sampled)
+    loop6 x 19,069,257 ops/sec ±0.81% (85 runs sampled)
+    Fastest is arr1,loop4
+    node-bench$ node -v
+    v8.3.0
