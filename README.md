@@ -1,6 +1,21 @@
-# bench-node-versions
+# Benchmarking Node with benchmark.js
+
+This hadn't been run since node 8 ... same machine,
+different OS, new node.
 
 different versions of node iterating over arrays
+
+    arr1 x 85,418,609 ops/sec ±0.67% (90 runs sampled)
+    arr2 x 44,137,469 ops/sec ±0.31% (91 runs sampled)
+    loop3 x 1,706,256 ops/sec ±1.36% (90 runs sampled)
+    loop4 x 85,498,111 ops/sec ±0.45% (92 runs sampled)
+    loop5 x 46,227,295 ops/sec ±1.47% (92 runs sampled)
+    loop6 x 66,686,765 ops/sec ±0.57% (92 runs sampled)
+    Fastest is loop4,arr1
+    node -v
+    v15.2.1
+
+---
 
     node-bench$ node arrays.js
     arr1 x 2,533,180 ops/sec ±2.18% (77 runs sampled)
@@ -45,3 +60,5 @@ different versions of node iterating over arrays
     Fastest is arr1,loop4
     node-bench$ node -v
     v8.3.0
+
+---
